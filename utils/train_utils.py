@@ -8,12 +8,10 @@ import torch.distributed as dist
 from torchvision import ops
 from torchvision import models
 from torchsummary import summary
-from backbone.mobilenet import MobileNetV2
 
 from config.train_config import cfg
 from utils.anchor_utils import AnchorsGenerator
 from utils.faster_rcnn_utils import FasterRCNN, FastRCNNPredictor
-from backbone.resnetFpnBackbone import resnet50_fpn_backbone
 from torchvision.models.detection.backbone_utils import resnet_fpn_backbone
 from utils.rpn_utils import RPNHead
 
